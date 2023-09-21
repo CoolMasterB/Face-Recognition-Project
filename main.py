@@ -13,8 +13,8 @@ from datetime import datetime
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': "",
-    'storageBucket': ""
+    'databaseURL': "https://face-recog-database-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    'storageBucket': "face-recog-database.appspot.com"
 })
 
 bucket = storage.bucket()
